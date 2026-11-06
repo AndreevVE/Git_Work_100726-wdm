@@ -10,8 +10,8 @@
 
 
 # Проверка, есть ли файлы с указанным расширением в исходной директории
-[ -r "$1" ] || { echo "Error: Source directory invalid" >&2; exit 1; }
-[ -w "$2" ] || { echo "Error: Destination directory invalid" >&2; exit 1; }
+[ -r "source_directory" ] || { echo "Error: Source directory invalid" >&2; exit 1; }
+[ -w "target_directory" ] || { echo "Error: Destination directory invalid" >&2; exit 1; }
 
 # Копирование файлов с указанным расширением в целевую директорию
 
