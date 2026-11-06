@@ -10,8 +10,8 @@ echo "Вы ввели расширение: $file_extension"
 # Запросить новое расширение для файлов.
 read -p "Введите новое расширение для файлов (без точки): " new_file_extension 
 # Проверка существования исходной директории и целевой директории
-[ -r "source_directory" ] || { echo "Error: Source directory invalid" >&2; exit 1; }
-[ -w "target_directory" ] || { echo "Error: Destination directory invalid" >&2; exit 1; }
+[ -r "$source_directory" ] || { echo "Error: Source directory invalid" >&2; exit 1; }
+[ -w "$target_directory" ] || { echo "Error: Destination directory invalid" >&2; exit 1; }
 # Проверка, есть ли файлы с указанным расширением в исходной директории               
 
 # Проверка, есть ли файлы с указанным расширением в исходной директории
